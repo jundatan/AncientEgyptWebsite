@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ancient Egypt</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <section class="header">
+            <nav>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"><img src = "images/pyramid.png" alt="Pyramid logo"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="#ABOUT">ABOUT EGYPT GODS</a></li>
+                        <li><a href="#PICTURES">PICTURES</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>Ancient Egyptian Gods</h1>
+                <p>History and pictures about Ancient Egypt and their gods</p>
+            </div>
+        </section>
+
+        <!-----About----->
+        <section class="about", id="ABOUT">
+            <h1>God and Goddess of Ancient Egypt</h1>
+            <p>The beauty in ancient egypt.</p>
+
+            <div class="row">
+                <div class="about-col">
+                    <h3>Ra</h3>
+                    <p>God of the sun</p>
+
+                    <h3>Anubis</h3>
+                    <p>God of the Dead</p>
+                
+                    <h3>Osiris</h3>
+                    <p>God of the Underworld</p>
+                
+                    <h3>Horus</h3>
+                    <p>God of the Sky</p>
+                
+                    <h3>Isis</h3>
+                    <p>Goddess of Good Fortune and Protector of the Dead</p>
+                
+                    <h3>Nut and Geb</h3>
+                    <p>God and Goddess of the Sky and Earth</p>
+                
+                    <h3>Amun</h3>
+                    <p>God of the Air</p>
+
+                    <h3>Thoth</h3>
+                    <p>God of Knowledge</p>
+
+                    <h3>Sekhmet</h3>
+                    <p>Goddess of War</p>
+
+                    <h3>Set</h3>
+                    <p>God of the Desert and Chaos</p>
+
+                    <h3>Ptah</h3>
+                    <p>God of Craftsmen</p>
+
+                    <h3>Hathor</h3>
+                    <p>Goddess of the Sky and Fertility</p>
+                </div>
+            </div>
+        </section>
+
+        <!-----Contact----->
+        <section class="pictures", id="PICTURES">
+            <h1>Ancient Egypt Pictures</h1>
+            <div class="row">
+                <div class="pictures-col">
+                    <h1>Egyptian Gods and Goddesses</h1>
+                    <img src="images/egyptiangods.jpg">
+                </div>
+            </div>
+            <div class="row">
+                <div class="pictures-col">
+                    <h1>Ancient Egypt Documentary</h1>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/hO1tzmi1V5g?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!------JavaScript for Toggle Menu------>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
